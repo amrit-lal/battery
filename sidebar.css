@@ -1,0 +1,45 @@
+
+li svg{
+    width: 16px;
+    height: 16px;
+}
+li h3{
+    font-size: 14px;
+}
+li svg{
+    flex-shrink: 0;
+}
+ul li{
+    display: flex;
+    gap: .5rem;
+    height: 2rem;
+    padding: 8px;
+    overflow: hidden;
+}
+ul span{
+    overflow: hidden;
+}
+ul{
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+.iconOnly,#sidebar{
+    transition-property: width, height, padding;
+    transition-timing-function: linear, cubic-bezier(.4,0,.2,1);
+    transition-duration: .2s, .15s;
+}
+span#menu{
+    transition-property: margin, opacity;
+    transition-timing-function: linear, cubic-bezier(.4,0,.2,1);
+    transition-duration: .2s, .15s;
+}
+@keyframes height {
+    0%{
+        width: 256px;
+    }
+    100% {
+        width: 48px;
+}
+}

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="AdminPage.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        function handleAddUser (){
+            console.log("Add User button clicked");
+        }
+
+        function handleGoBack (){
+            console.log("Add User button clicked");
+        }
+    </script>
+    <div class="flex">
+
+        <iframe
+           id="sidebar"
+           src="sidebar.html"
+           class="min-[768px]:block hidden"
+           style="height: 100vh; border: none"
+         ></iframe>
+          <iframe
+           id="sidebars"
+           src="sideBarmd.html"
+           class="max-[768px]:!block hidden absolute top-0 !w-screen"
+           style="height: 100vh; border: none;"
+         ></iframe>
+        
+         <div  class="bg-[var(--background)] min-[768px]:px-8 px-3 max-[768px]:!w-screen"  id="main">
+             <span>
+          <header
+            class="flex h-[48px] shrink-0 items-center gap-2 transition-all ease-linear"
+          >
+            <div class="flex items-center gap-2">
+              <button
+                id="toggleBtn"
+                class="inline-flex items-center bg-[var(--accent)] justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50 size-7 hover:!shadow-sm"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-align-justify-icon lucide-align-justify"><path d="M3 12h18"/><path d="M3 18h18"/><path d="M3 6h18"/></svg>
+                <span class="sr-only">Toggle Sidebar</span>
+              </button>
+
+              <div class="bg-border shrink-0 mr-2 h-4 w-px"></div>
+
+              <nav class="">
+                <ol
+                  class="text-muted-foreground flex flex-wrap items-center gap-1.5 text-sm break-words sm:gap-2.5"
+                >
+                  <!-- <li class="inline-flex items-center gap-1.5">
+                    <a
+                      class="block hover:text-foreground transition-colors"
+                      href="/Dashboard.html"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-home w-[1rem] h-[1rem]"
+                      >
+                        <path
+                          d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+                        ></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                      </svg>
+                    </a>
+                  </li> -->
+
+                  <!-- <li class="[&>svg]:size-3.5">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-chevron-right"
+                    >
+                      <path d="m9 18 6-6-6-6"></path>
+                    </svg>
+                  </li> -->
+
+                  <li class="inline-flex items-center gap-1.5">
+                    <span class="text-foreground font-normal">Admin Page</span>
+                  </li>
+                </ol>
+              </nav>
+            </div>
+          </header>
+        </span>
+             
+             <!--Danish code from here -->
+    <!-- <div class="admin-header-text">
+    <h3 class="">Admin Panel Page</h3>
+    </div>
+
+    <hr /> -->
+
+
+  
+
+
+
+    <div class="user-details-container">
+        <div class="table-container">
+            <table class="user-details-heading">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Username</th>
+                    <th>Full Name</th>
+                    <th>Role</th>
+                    <th>Created At</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>User 1</td>
+                    <td>Full Name 1</td>
+                    <td>Role 1</td>
+                    <td>Created At 1</td>
+                    <td>
+                        <button class="edit-button">Edit</button>
+                        <button class="delete-button">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>User 2</td>
+                    <td>Full Name 2</td>
+                    <td>Role 2</td>
+                    <td>Created At 2</td>
+                    <td>
+                        <button class="edit-button">Edit</button>
+                        <button class="delete-button">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+        <!-- <p class="user-details-heading-text">#</p>
+        <p class="user-details-heading-text">Username</p>
+        <p class="user-details-heading-text">Full Name</p>
+        <p class="user-details-heading-text">Role</p>
+        <p class="user-details-heading-text">Created At</p>
+        <p class="user-details-heading-text">Actions</p> -->
+        <!-- </div> -->
+
+        <!-- <div class="user-details">
+            <p>1</p>
+            <p>User 1</p>
+            <p>Full Name 1</p>
+            <p>Role 1</p>
+            <p>Created At 1</p>
+            <p><button>Edit</button> <button>Delete</button></p>
+        </div> -->
+
+
+      
+
+    </div>
+
+    <div class="goback-button-container">
+      <button onclick="handleGoBack()" class="goback-button">
+            Go Back
+        </button>
+        </div>
+    </div>
+    
+</div>
+ <script>
+      let sidebarVisible = true;
+      const main = document.getElementById("main");
+      const sidebar = document.getElementById("sidebar");
+      const addData = document.getElementById("addData")
+      function handleForm(){
+        if(addData.style.display === "flex"){
+          addData.style.display = "none"
+        }else{
+          addData.style.display = "flex"
+        }
+      }
+      function applySidebarState(state) {
+        if (state === "hide") {
+          main.style.width = "calc(100vw)";
+          sidebar.style.width = "48px";
+          sidebars.style.display = "none";
+          sidebars.classList.remove("max-[768px]:!block")
+          sidebars.classList.add("max-[768px]:!hidden")
+          sidebarVisible = false;
+        } else {
+          sidebars.classList.add("max-[768px]:!block")
+          sidebars.classList.remove("max-[768px]:!hidden")
+          sidebar.style.width = "256px";
+          sidebars.style.display = "block !important";
+          main.style.width = "calc(100vw)";
+          sidebarVisible = true;
+        }
+      }
+
+      document.getElementById("toggleBtn").addEventListener("click", () => {
+        const newState = localStorage.getItem("sidebarStatus") == "show" ? "hide" : "show";
+        console.log(newState);
+        
+        applySidebarState(newState);
+        localStorage.setItem("sidebarStatus", newState);
+      });
+
+      window.addEventListener("storage", (event) => {
+        if (event.key === "sidebarStatus") {
+            applySidebarState(event.newValue);
+            sidebarVisible = event.newValue === "show";
+
+        }
+      });
+
+      const initial = localStorage.getItem("sidebarStatus") || "show";
+      applySidebarState(initial);
+    </script>
+</body>
+</html>

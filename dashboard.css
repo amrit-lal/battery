@@ -1,0 +1,12 @@
+button{
+    cursor: pointer;
+    border: none;
+    max-height: 48px;
+    font-family: Inter, sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background .2s, color .2s, box-shadow .2s;
+}
+input{
+    outline: none;
+}
